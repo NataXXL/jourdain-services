@@ -112,10 +112,6 @@ main {
   animation: fadeInUp 0.6s ease 0.15s both; /* délai 0.15s */
 }
 
-.cta-button {
-  animation: fadeInUp 0.6s ease 0.3s both;  /* délai 0.3s */
-}
-
 .section {
   max-width: 1100px;
   margin: 0 auto;
@@ -176,6 +172,7 @@ section[id] {
 }
 
 .cta-button {
+  animation: fadeInUp 0.6s ease 0.3s both;  /* délai 0.3s */
   display: inline-block;
   background-color: var(--color-accent);
   transition: background-color 0.2s ease, transform 0.2s ease;
