@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jourdain Services - Studio Créatif</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a href="#accueil" class="logo" aria-label="Retour accueil">Jourdain Services</a>
+      <button class="menu-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false">
+        ☰
+      </button>
+      <nav class="site-nav" aria-label="Navigation principale">
+        <ul>
+          <li><a href="#accueil">Accueil</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#realisations">Réalisations</a></li>
+          <li><a href="#temoignages">Témoignages</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="accueil" class="hero">
+        <div class="hero-content">
+          <h1>Nous concevons des expériences digitales qui marquent.</h1>
+          <p>
+            Jourdain Services accompagne les marques ambitieuses avec des sites web,
+            identités visuelles et campagnes digitales orientées performance.
+          </p>
+          <a href="#realisations" class="cta-button">Voir nos projets</a>
+        </div>
+      </section>
+
+      <section id="services" class="section">
+        <h2 class="section-title">Services</h2>
+        <div class="services-grid">
+          <article class="card">
+            <p class="card-icon" aria-hidden="true">💻</p>
+            <h3>Création de site web</h3>
+            <p>Sites modernes, rapides et pensés pour convertir vos visiteurs en clients.</p>
+          </article>
+          <article class="card">
+            <p class="card-icon" aria-hidden="true">🎨</p>
+            <h3>Identité de marque</h3>
+            <p>Logo, palette et univers visuel cohérents pour une image professionnelle forte.</p>
+          </article>
+          <article class="card">
+            <p class="card-icon" aria-hidden="true">🚀</p>
+            <h3>Stratégie digitale</h3>
+            <p>Accompagnement sur vos contenus et campagnes pour augmenter votre visibilité.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="realisations" class="section">
+        <h2 class="section-title">Réalisations</h2>
+        <div class="filters" role="group" aria-label="Filtrer les projets">
+          <button type="button" class="filter-btn active" data-filter="all">Tous</button>
+          <button type="button" class="filter-btn" data-filter="web">Web</button>
+          <button type="button" class="filter-btn" data-filter="branding">Branding</button>
+        </div>
+        <div class="projects-grid">
+          <article class="card project-card" data-category="web"><h3>Site Vitamove</h3><p>Refonte UX et SEO local.</p></article>
+          <article class="card project-card" data-category="branding"><h3>Identité NovaCare</h3><p>Direction artistique complète.</p></article>
+          <article class="card project-card" data-category="web"><h3>Landing ZenMotion</h3><p>Campagne d'acquisition ciblée.</p></article>
+          <article class="card project-card" data-category="branding"><h3>Rebranding Pulse</h3><p>Modernisation de l'image de marque.</p></article>
+          <article class="card project-card" data-category="web"><h3>Plateforme KineHub</h3><p>Espace client personnalisé.</p></article>
+          <article class="card project-card" data-category="branding"><h3>Pack Visuel Ortho+</h3><p>Supports print et social media.</p></article>
+        </div>
+      </section>
+
+      <section id="temoignages" class="section">
+        <h2 class="section-title">Témoignages</h2>
+        <div class="testimonials-grid">
+          <article class="card">
+            <h3>Camille R.</h3>
+            <p class="company">NovaCare</p>
+            <p>"Une équipe réactive et une refonte qui a vraiment boosté nos prises de contact."</p>
+          </article>
+          <article class="card">
+            <h3>Marc L.</h3>
+            <p class="company">Studio Pulse</p>
+            <p>"Le travail branding est impeccable, notre communication est enfin cohérente."</p>
+          </article>
+          <article class="card">
+            <h3>Sarah D.</h3>
+            <p class="company">Vitamove</p>
+            <p>"Nous avons doublé nos demandes en ligne en quelques mois grâce au nouveau site."</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="section">
+        <h2 class="section-title">Contact</h2>
+        <form action="#" method="post">
+          <div>
+            <label for="nom">Nom</label>
+            <input type="text" id="nom" name="nom" autocomplete="name" placeholder="Jean Dupont" required />
+          </div>
+
+          <div>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" autocomplete="email" placeholder="jean.dupont@example.com" required />
+          </div>
+
+          <div>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required placeholder="Bonjour, décrivez votre projet ici..." ></textarea>
+          </div>
+
+          <button type="submit">Envoyer</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 Jourdain Services. Tous droits réservés.</p>
+    </footer>
+    <script src="script.js" defer></script>
+  </body>
+</html>
